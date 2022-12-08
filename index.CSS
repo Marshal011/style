@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/IMG_2276.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav .ZOO ul{
+    display:flex;
+}
+.nav .ZOO ul li{
+    display: flex;
+    list-style: none;
+    padding: 6px 7px;
+}
+.nav .ZOO ul li a{
+    text-decoration: none;
+    color:palegreen;
+    font-size:15px; 
+}
+.nav .scol{
+    margin-left: 8px;
+    font-size: 20px;
+    color: goldenrod;
+}
+.clon{
+text-align: center;
+margin-top: 350px;
+}
+.clon button {
+    padding:10px 40px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+}
+.prod{
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./img/2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nm{
+    display: flex;
+    color: blue;
+    justify-content: space-between;
+}
+.R ul li{
+    list-style: none;
+    padding: 7px 5px;
+    font-size: 20px;
+    width:33%;
+    color: goldenrod;
+}
+footer{
+    height: 20px;
+    background: green;
+    color: blue;
+    margin-top: 105px;
+}
+footer{
+    float: right;
+    line-height: 20px;
+}
+@media screen and (max-width:375px){
+    .nav{
+        flex-direction: column;
+    }
+    .nav .ZOO ul{
+        flex-direction: column;
+    }
+    .nm{
+        flex-direction: column;
+    }
+    .prod{
+        width: 100%;
+        height: auto;
+    }
+    .R ul li{
+        width: 100%;
+        height: auto;
+    }
+    .clon{
+        margin-top: 150px;
+    }
+    footer{
+        margin-top: 3px;
+    }
+}
